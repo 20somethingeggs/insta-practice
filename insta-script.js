@@ -4,6 +4,22 @@ function f(number) {
     console.log("open draft " + number);
 }
 
+//popup post 
+// $(function () {
+//   "use strict";
+  
+//   $(".post img").click(function () {
+//       var $src = $(this).attr("src");
+//       $(".show").fadeIn();
+//       $(".show-post img").attr("src", $src);
+//   });
+  
+//   $("span, .overlay").click(function () {
+//       $(".show").fadeOut();
+//   });
+  
+// });
+
 function toggleComments() {
   console.log("toggling comments visibility");
   var comments = document.getElementsByClassName("comments");
