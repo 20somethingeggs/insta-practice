@@ -9,14 +9,14 @@ TODO: What other functions do you need to have? Comments? Profiles?
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
-  <script src="insta-script.js" async></script>
+  <link rel="stylesheet" href="instabook.css">
+  <script src="instabook-script.js" async></script>
 </head>
 
 <body>
   <!-- TOP NAVIGATION MENU -->
   <div class="topnav">
-    <a class="active">InstaBook</a>
+    <a class="active" onclick="toggleDialogue()">InstaBook</a>
     <input type="text" placeholder="Search.." name="search">
   </div>
 
@@ -80,5 +80,10 @@ TODO: What other functions do you need to have? Comments? Profiles?
   </div>
 </div>
 </body>
+<div id="dialogueBox" onclick="progressDialogue()" style="display: none">
+  <p id="dialogue">
+    Alma says hi
+  </p>
+</div>
 
 </html>

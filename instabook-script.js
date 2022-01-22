@@ -20,3 +20,24 @@ function toggleComments(post) {
     comments.style.display = "block";
   }
 }
+
+function progressDialogue() {
+  var dialogue = document.getElementById("dialogue");
+  if (dialogue.textContent === "Clicked to progress dialogue") {
+    dialogue.textContent = "Progressed dialogue again";
+  } else {
+    dialogue.textContent = "Clicked to progress dialogue";
+  }
+}
+
+function toggleDialogue() {
+  console.log("Clicked to toggle dialogue");
+  var dialogue = document.getElementById("dialogueBox");
+  var dialogueactual = document.getElementById("dialogue");
+  dialogueactual.textContent = "Alma says hi";
+  if (dialogue.style.display === "block") {
+    dialogue.style.display = "none";
+  } else {
+    dialogue.style.display = "block";
+  }
+}
