@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+TODO: Fix the styling for the side navigation menu
+TODO: Fix the styling for the top navigation menu
+TODO: Fix the styling for the posts
+
+TODO: What other functions do you need to have? Comments? Profiles?
+-->
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="insta-script.js" async></script>
+</head>
+
+<body>
+  <!-- TOP NAVIGATION MENU -->
+  <div class="topnav">
+    <a class="active">InstaBook</a>
+    <input type="text" placeholder="Search.." name="search">
+  </div>
+
+  <div class="profile">
+    <p class="username"> suspicous_person </p>
+    <p class="bio"> <b> John Smith </b> Doughmino's Pizza </p>
+  </div>
+
+  <div class="ctent">
+    <div class="post" id="0">
+      <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+      <img src="images/dog.jpg" alt="An image of a cute dog.">
+      <div class="sidenav">
+        <div class="post-header">
+          <a> <b> suspicous_person </b> </a>
+          <p> RIP to my best friend and first pet, Buddy. You will be missed. </p>
+        </div>
+        <button class="load-comments" id="load-comments0" onclick="toggleComments(0)">Show comments</button>
+        <div class="comments" id="comments0" style="display: none">
+          <p> <b> user_name </b> What a good boy. </p>
+          <p> <b> totally_real_user </b> Very fluffy looking! </p>
+          <p> <b> not_suspicious_at_all </b> Sorry for your loss. I'm sure the boss will understand if you want to
+          take a few days off "work." </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="post" id="1">
+      <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+      <img src="images/school.jpg" alt="An image of a school.">
+      <div class="sidenav">
+        <div class="post-header">
+          <a> <b> suspicous_person </b> </a>
+          <p> Goodbye to Urbana High School. You will not be missed. </p>
+        </div>
+        <button class="load-comments" id="load-comments1" onclick="toggleComments(1)">Show comments</button>
+        <div class="comments" id="comments1" style="display: none">
+          <p> <b> user_name </b> LMAOO we wont miss this place </p>
+          <p> <b> totally_real_user </b> glad we got out of that alive </p>
+          <p> <b> not_suspicious_at_all </b> Good job on graduating! Can we rely on you more often now? </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post" id="2">
+    <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+    <img src="images/car.jpg" alt="An image of a red car.">
+    <div class="sidenav">
+      <div class="post-header">
+        <a> <b> suspicous_person </b> </a>
+        <p> My first ever sweet ride. So lucky to get my favorite color car, red. </p>
+      </div>
+      <button class="load-comments" id="load-comments2" onclick="toggleComments(2)">Show comments</button>
+      <div class="comments" id="comments2" style="display: none">
+        <p> <b> user_name </b> nice. </p>
+        <p> <b> totally_real_user </b> soooo jealous! </p>
+        <p> <b> not_suspicious_at_all </b> This car will make you more useful to the boss. </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
