@@ -16,7 +16,7 @@ TODO: What other functions do you need to have? Comments? Profiles?
 <body>
   <!-- TOP NAVIGATION MENU -->
   <div class="topnav">
-    <a class="active" onclick="toggleDialogue()">InstaBook</a>
+    <a class="active" onclick="toggleDialogue(0)">InstaBook</a>
     <input type="text" placeholder="Search.." name="search">
   </div>
 
@@ -80,9 +80,13 @@ TODO: What other functions do you need to have? Comments? Profiles?
   </div>
 </div>
 </body>
-<div id="dialogueBox" onclick="progressDialogue()" style="display: none">
+
+<div id="pageCover" style="display: none"></div>
+
+<div id="dialogueBox" onclick="progressDialogue(3)" style="display: none">
+  <p id="almapic"></p>
   <p id="dialogue">
-    Alma says hi
+    Perhaps we can find this person’s account because we know this business is 
   </p>
 </div>
 

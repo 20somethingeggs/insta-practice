@@ -50,6 +50,10 @@ img {
   cursor: pointer;
 }
 
+.load-comments:hover {
+  cursor: pointer;
+}
+
 .sidenav p {
   padding-left: 6px;
   text-decoration: none;
@@ -89,10 +93,6 @@ img {
   background: inherit;
   border: none;
   cursor: default;
-}
-
-.load-comments:hover {
-  cursor: pointer;
 }
 
 .comments p {
@@ -203,20 +203,43 @@ img {
 
 #dialogueBox {
   position: fixed;
-  bottom: 5px;
+  bottom: 8px;
   width: 75%;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 1em;
   margin-left: 7.5%;
   height: 15%;
-  border: 5px black;
+  border: solid 2px black;
   border-radius: 5px;
   align-self: center;
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
   color: black;
+  z-index: 100;
+}
+
+#almapic {
+  position: fixed;
+  left: 10%;
+  bottom: 2px;
+  width: 10%;
+  height: 15%;
+  background-image: url("images/alma_icon.PNG");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #dialogue {
   border: 5px black;
+  padding-left: 15%;
+}
+
+#pageCover {
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
