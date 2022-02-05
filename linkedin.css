@@ -1,0 +1,175 @@
+body {
+    background-color: aliceblue;
+}
+
+p {
+    color: rgb(65, 65, 65);
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 3em;
+}
+
+h3 {
+    color:rgb(65, 65, 65);
+    font-size: 20px;
+}
+
+/** Profile */
+
+.profile {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding-right: 4em;
+    padding-left: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: white;
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 1em;
+}
+
+.profile .username {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.profile .username:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile b {
+    font-size: 20px;
+    color:rgb(65, 65, 65);
+}
+
+/** Cards */
+.card {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1em;
+    padding-right: 4em;
+    padding-left: 4em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 1em;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card #contactbuttons {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.card button {
+    padding: 1em;
+    border-radius: 1em;
+    border: 1px solid gray;
+    margin: 0px 5px;
+    width: 20%;
+    cursor: default;
+    background-color: rgb(221, 233, 255);
+}
+
+.card button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 221, 255);
+}
+
+.card button:active {
+    background-color: rgb(166, 212, 253);
+}
+
+/** View more button */
+
+#viewmore {
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+    width: 10%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 45%;
+    cursor: default;
+}
+
+#viewmore:hover {
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+}
+
+#viewmore:active {
+    background-color: lightgray;
+}
+
+/** DIALOGUE BOX */
+
+#dialogueBox {
+    position: fixed;
+    bottom: 8px;
+    width: 75%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    margin-left: 7.5%;
+    height: 15%;
+    border: solid 2px rgb(85, 85, 85);
+    border-radius: 5px;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    z-index: 100;
+  }
+  
+  #almapic {
+    position: fixed;
+    left: 10%;
+    bottom: 3px;
+    width: inherit;
+    height: inherit;
+    background-image: url("images/alma_icon.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #dialogue {
+    position: absolute;
+    margin: auto;
+    left: auto;
+    right: auto;
+    width: fit-content;
+    top: 2em;
+    padding-left: 15%;
+  }
+  
+  #pageCover {
+    position: fixed;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }

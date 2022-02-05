@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="linkedin.css">
+    <script src="instabook-script.js" async></script>
+    </head>
+
+<body>
+    <div class="topnav">
+        <h1>LinkOut</h1>
+    </div>
+
+    <div class="profile">
+        <p class="username">suspicious_person</p>
+        <b>John Smith</b>
+        <p class="bio">Current employee at Doughmino's Pizza. Seeking opportunities, no matter the cost.</p>
+    </div>
+
+    <div class="card" id=contactInfo>
+        <h2>Contact Information</h2>
+        <div id="contactbuttons">
+            <button onclick="toggleDialogue(7)">Email</button>
+            <button onclick="toggleDialogue(0)">Phone Number</button>
+            <button onclick="toggleDialogue(0)">Address</button>
+        </div>
+    </div>
+
+    <div class="card" id="profInfo">
+        <h2>Experience</h2>
+        <h3>Doughmino's Pizza</h3>
+        <p> <b> Employee </b> 1 year, 8 months</p>
+        <p>Bake and deliver delicious pizzas. Perform specialized jobs for the boss.</p>
+    </div>
+
+    <button id="viewmore" onclick="toggleDialogue(0)">View More</button>
+
+</body>
+
+<div id="pageCover" style="display: none"></div>
+
+<div id="dialogueBox" onclick="toggleDialogue()" style="display: none">
+  <p id="almapic"></p>
+  <p id="dialogue">
+     
+  </p>
+</div>
+
+</html>
