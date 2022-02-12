@@ -16,7 +16,7 @@ TODO: What other functions do you need to have? Comments? Profiles?
 <body>
   <!-- TOP NAVIGATION MENU -->
   <div class="topnav">
-    <a class="active" onclick="toggleDialogue()">InstaBook</a>
+    <a class="active" onclick="toggleDialogue(0)">InstaBook</a>
     <input type="text" placeholder="Search.." name="search">
   </div>
 
@@ -28,6 +28,7 @@ TODO: What other functions do you need to have? Comments? Profiles?
   <div class="ctent">
     <div class="post" id="0">
       <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+      <div class="postheader">
       <img id="dog" src="images/dog.jpg" alt="An image of a cute dog.">
       <div id="dogmodal" class="modal">
         <span class="close2">&times;</span>
@@ -50,6 +51,7 @@ TODO: What other functions do you need to have? Comments? Profiles?
 
     <div class="post" id="1">
       <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+      <div class="postheader">
       <img id = "school" src="images/school.jpg" alt="An image of a school.">
       <div id="schoolmodal" class="modal">
         <span class="close">&times;</span>
@@ -72,6 +74,7 @@ TODO: What other functions do you need to have? Comments? Profiles?
 
   <div class="post" id="2">
     <!-- Please try not to use any copyrighted pictures; lots of royalty-free pictures can be found here https://pixabay.com/ -->
+    <div class="postheader">
     <img id = "car" src="images/car.jpg" alt="An image of a red car.">
     <div id="carmodal" class="modal">
       <span class="close3">&times;</span>
@@ -92,9 +95,13 @@ TODO: What other functions do you need to have? Comments? Profiles?
   </div>
 </div>
 </body>
-<div id="dialogueBox" onclick="progressDialogue()" style="display: none">
+
+<div id="pageCover" style="display: none"></div>
+
+<div id="dialogueBox" onclick="toggleDialogue(0)" style="display: none">
+  <p id="almapic"></p>
   <p id="dialogue">
-    Alma says hi
+     
   </p>
 </div>
 
