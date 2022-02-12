@@ -71,4 +71,4 @@ var dialogue = [
   "Darn, I wonder how we can get the answers to these questions?"
 ];
 
-var images = ["images/dog.jpg", "images/school.jpg", "images/car.jpg"];
+var images = ["images/dog.jpg", "images/school.jpg", "images/car.jpg", "images/genericprofile.jpg"];

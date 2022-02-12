@@ -13,7 +13,7 @@
     </div>
 
     <div class="profile">
-        <img id="profilepic" src="images/genericprofile.jpg" alt="The generic profile picture.">
+        <img id="profilepic" src="images/genericprofile.jpg" alt="The generic profile picture." onclick="popup(3)">
         <p class="username">suspicious_person</p>
         <b>John Smith</b>
         <p class="bio">Current employee at Doughmino's Pizza. Seeking opportunities, no matter the cost.</p>
@@ -36,6 +36,10 @@
     </div>
 
     <button id="viewmore" onclick="toggleDialogue(0)">View More</button>
+
+<div id="modal" style="display: none" onclick="hidemodal()">
+    <img id="modalimg">
+</div>
 
 </body>
 

@@ -93,11 +93,12 @@ h3 {
     margin: 0px 5px;
     width: 20%;
     cursor: default;
-    background-color: rgb(52, 92, 167);
+    background-color: rgb(63, 108, 190);
     color: white;
     font-weight: 500;
     letter-spacing: .05em;
     font-size: 1em;
+    transition: .3s;
 }
 
 .card button:hover {
@@ -120,7 +121,7 @@ h3 {
     width: 10%;
     padding: 5px;
     border: 1px solid lightgray;
-    background-color: rgb(52, 92, 167);
+    background-color: rgb(63, 108, 190);
     color: white;
     border-radius: 5px;
     display: inline-block;
@@ -128,6 +129,7 @@ h3 {
     margin-bottom: 2em;
     margin-left: 45%;
     cursor: default;
+    transition: .3s;
 }
 
 #viewmore:hover {
@@ -188,3 +190,28 @@ h3 {
     top: 0;
     left: 0;
   }
+ 
+/** Modal */
+#modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0, 0.8); 
+    transition: .3s;
+}
+  
+#modal #modalimg {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 50%;
+    height: 100%;
+    max-height: 70%;
+    transition: .3s;
+}
