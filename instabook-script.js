@@ -58,3 +58,47 @@ var dialogue = [
   "I wonder if we can get into this email to find evidence of shady doings.",
   "Darn, I wonder how we can get the answers to these questions?"
 ];
+
+//modal code for dog
+var modal = document.getElementById("dogmodal");
+var img = document.getElementById("dog");
+var modalImg = document.getElementById("img02");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span = document.getElementsByClassName("close2")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+//modal code for image pop up: school 
+var modal = document.getElementById("schoolmodal");
+var img = document.getElementById("school");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+//modal code for image pop up: car 
+var modal = document.getElementById("carmodal");
+var img = document.getElementById("car");
+var modalImg = document.getElementById("img03");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close3")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
