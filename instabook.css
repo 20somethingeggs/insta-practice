@@ -130,16 +130,18 @@ body {
   height: inherit;
   padding: .87em 1em;
   border-radius: 3px;
+  background-color: #2196F3;
+  transition: .3s;
 }
 
 .topnav a:hover {
   cursor: pointer;
-  background-color: #ddd;
+  background-color: #2086da;
   color: black;
 }
 
-.topnav a.active {
-  background-color: #2196F3;
+.topnav a:active {
+  background-color: #1472be;
   color: white;
 }
 
